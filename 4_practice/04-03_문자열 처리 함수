@@ -1,0 +1,18 @@
+#문자열 처리 함수
+python = "Python is Amazing"
+print(python.lower())
+print(python.upper())
+print(python[0].isupper()) # 첫번째 문자가 대문자이냐? True
+print(len(python)) # 해당 함수의 전체 길이 출력
+print(python.replace("Python", "Java")) # replace 함수를 활용하여 문자 변환
+
+index = python.index("n") # 해당 문자의 위치 출력
+print(index)
+index = python.index("n", index + 1) # 두번째 n 위치 출력
+print(index)
+
+print(python.find("Java")) #-1은 해당 문자가 포함되지 않는다는 뜻
+#print(python.index("Java")) # 인덱스의 경우 없으면 에러로 멈춤
+print("hi") # 에러로 멈출경우 그자리에서 프로그램 정지되어 이후 코드는 출력 안됨
+
+print(python.count("n")) # 몇번 사용했는지 확인인
